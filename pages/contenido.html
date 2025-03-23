@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--  Requisito: "Define un título usando la etiqueta <title>" -->
+    <title>Agenda - Tech Horizons 2025</title>
+
+    <!--  Requisito: "Uso de meta viewport" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Requisito: "Tipografía con Google Fonts" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+    <!--  Requisito: "Enlace a CSS externo" -->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <!--  Requisito: "Navbar fija con efecto scroll (solo CSS)" -->
+    <div class="scroll-trigger"></div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="../assets/images/conference-logo.png" alt="Logo Conferencia 2025" />
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contenido.html">Agenda</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="navbar-button">Login</button>
+                <button class="navbar-button">FAQ</button>
+                <div class="dropdown">
+                    <button class="navbar-button lang-toggle-btn"><span class="icon-earth"></span></button>
+                    <ul class="lang-dropdown-content">
+                        <li><a href="#">ES</a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">FR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Requisito: "Header con nombre de la conferencia" -->
+    <header class="hero">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1>Agenda del Evento 2025</h1>
+                <p>Consulta todos los detalles y reserva tu plaza</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Agenda en formato grid con tarjetas flip -->
+    <section class="agenda-grid">
+        <!-- Día 1 -->
+        <div class="agenda-card">
+            <div class="card-front">
+                <h2>Día 1</h2>
+            </div>
+            <div class="card-back">
+                <h3><span class="icon-calendar"></span> Día 1 - 15 de noviembre de 2025</h3>
+                <table class="agenda-table">
+                    <thead>
+                        <tr>
+                            <th><span class="icon-clock"> Horario</th>
+                            <th><span class="icon-microphone"> Actividad</th>
+                            <th><span class="icon-location"></span> Ubicación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td>Registro y bienvenida</td>
+                            <td>Hall principal</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 11:30</td>
+                            <td>Conferencia inaugural: "El Futuro de la IA en la Automatización"</td>
+                            <td>Auditorio</td>
+                        </tr>
+                        <tr>
+                            <td>11:30 - 12:00</td>
+                            <td>Coffee Break & Networking</td>
+                            <td>Zona Networking</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 14:00</td>
+                            <td>Taller: RPA con Blue Prism</td>
+                            <td>Sala 1</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 14:00</td>
+                            <td>Taller: IoT con ESP32 para domótica</td>
+                            <td>Sala 2</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:00</td>
+                            <td>Almuerzo</td>
+                            <td>Comedor</td>
+                        </tr>
+                        <tr>
+                            <td>15:00 - 16:30</td>
+                            <td>Panel de expertos: "Ética en la Automatización y el Futuro del Trabajo"</td>
+                            <td>Auditorio</td>
+                        </tr>
+                        <tr>
+                            <td>17:00 - 18:30</td>
+                            <td>Taller: FastAPI y desarrollo backend</td>
+                            <td>Sala 1</td>
+                        </tr>
+                        <tr>
+                            <td>18:30 - 19:00</td>
+                            <td>Clausura del primer día</td>
+                            <td>Auditorio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Día 2 -->
+        <div class="agenda-card">
+            <div class="card-front">
+                <h2>Día 2</h2>
+            </div>
+            <div class="card-back">
+                <h3><span class="icon-calendar"> Día 2 - 16 de noviembre de 2025</h3>
+                <table class="agenda-table">
+                    <thead>
+                        <tr>
+                            <th><span class="icon-clock"> Horario</th>
+                            <th><span class="icon-microphone"> Actividad</th>
+                            <th><span class="icon-location"></span> Ubicación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:30 - 11:00</td>
+                            <td>Mesa Redonda: "Automatización y Nuevas Oportunidades en la Industria"</td>
+                            <td>Auditorio</td>
+                        </tr>
+                        <tr>
+                            <td>11:30 - 13:00</td>
+                            <td>Taller: Seguridad en RPA y automatización</td>
+                            <td>Sala 1</td>
+                        </tr>
+                        <tr>
+                            <td>13:00 - 14:30</td>
+                            <td>Espacio Networking & Contacto con Empresas</td>
+                            <td>Zona B2B</td>
+                        </tr>
+                        <tr>
+                            <td>14:30 - 15:30</td>
+                            <td>Almuerzo</td>
+                            <td>Comedor</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 17:30</td>
+                            <td>Conferencia: "IA, RPA y el Futuro del Desarrollo de Software"</td>
+                            <td>Auditorio</td>
+                        </tr>
+                        <tr>
+                            <td>17:30 - 18:30</td>
+                            <td>Clausura y entrega de premios a proyectos innovadores</td>
+                            <td>Auditorio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer class="footer-container">
+    <div class="container">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h2>Contacto</h2>
+                <p>Email: <a href="mailto:info@tecnologia2025.com">info@tecnologia2025.com</a></p>
+                <p>Teléfono: +34 600 123 456</p>
+                <p>Ubicación: Madrid, España</p>
+            </div>
+            <div class="footer-col">
+                <h2>FAQ</h2>
+                <p>¿Dónde se realiza?</p>
+                <p>¿Cómo me inscribo?</p>
+                <p>¿Hay talleres online?</p>
+            </div>
+            <div class="footer-col">
+                <h2>Partners</h2>
+                <p>SafeScreen</p>
+                <p>NeuralCode</p>
+                <p>FutureNet</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-social">
+        <a href="#"><span class="icon-facebook"></span></a>
+        <a href="#"><span class="icon-twitter"></span></a>
+        <a href="#"><span class="icon-linkedin"></span></a>
+        <a href="#">Privacy Policy</a>
+    </div>
+    <p class="footer-copy"><span class="icon-copyright"></span> 2012 - 2025 TechoHorizons. Todos los derechos
+        reservados.</p>
+</footer>
+
+</body>
+
+</html>

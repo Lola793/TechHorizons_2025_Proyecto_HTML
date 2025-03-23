@@ -1,0 +1,566 @@
+/* Tipografía desde Google Fonts */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111827;
+    color: #00ffcc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Scroll trigger (navbar dinámica con CSS) */
+body:has(.scroll-trigger:in-viewport) .navbar {
+    background: rgba(0, 0, 0, 0.3);
+    color: #00ffcc;
+    backdrop-filter: blur(8px);
+}
+
+body:not(:has(.scroll-trigger:in-viewport)) .navbar {
+    background: #1e293b;
+    transition: 0.3s ease;
+}
+
+/* Hero con fondo GIF y overlay */
+.hero {
+    position: relative;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    background: url("../assets/images/tech_horizons_banner_animated.gif") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.85));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+/* Navbar alineada horizontalmente */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    justify-content: space-between;
+}
+
+.navbar>* {
+    flex: 1;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.nav-logo img {
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #00ffcc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #33ff88;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.navbar-button {
+    background: #000;
+    color: #00ffcc;
+    display: flex;
+    flex-grow: 2;
+    cursor: pointer;
+}
+
+/* Dropdown de idioma */
+.dropdown {
+    position: relative;
+}
+
+.lang-dropdown-content {
+    list-style: none;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .lang-dropdown-content {
+    display: block;
+}
+
+.lang-dropdown-content li a {
+    color: #00ffcc;
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0.8rem;
+}
+
+/* Secciones generales */
+.intro-section,
+.vision-section,
+.benefits-section,
+.cta-section,
+.sponsors-section,
+.video-presentation-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.intro-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Botón principal */
+.cta-button {
+    display: inline-block;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #002aff;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgba(132, 239, 132, 0.993);
+}
+
+/* Estilo para video */
+.video-presentation-section {
+    padding: 4rem 2rem;
+}
+
+.event-video {
+    width: 100%;
+    max-height: 500px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(20, 189, 20, 0.5);
+}
+
+fieldset {
+    border: 1px solid #00ffcc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+input[type="month"],
+input[type="text"][name="tarjeta"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    gap: 1rem;
+    padding: 4rem 2rem;
+}
+
+.registration-form label {
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: whitesmoke;
+    color: #0c1320;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="tel"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.3rem 0;
+    box-sizing: border-box;
+}
+
+
+.registration-form table {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+.registration-form td {
+    padding: 4px 8px;
+    vertical-align: top;
+}
+
+/* Agenda Grid */
+.agenda-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Cards Flip */
+.agenda-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.agenda-card>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.8s;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.card-front {
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ffcc;
+    font-size: 1.8rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.card-back {
+    background: linear-gradient(to bottom,
+            hsl(217, 33%, 17%),
+            rgba(0, 0, 0, 0.4));
+    color: #00ffcc;
+    transform: rotateY(180deg);
+    padding: 1rem;
+}
+
+.agenda-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.agenda-card:hover .card-back {
+    transform: rotateY(360deg);
+}
+
+/* Tabla de agenda */
+.agenda-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.agenda-table th,
+.agenda-table td {
+    padding: 0.6rem;
+    border: 1px solid #374151;
+    text-align: left;
+}
+
+.agenda-table th {
+    background: linear-gradient(to bottom,
+            hsl(217, 33%, 17%),
+            rgba(0, 0, 0, 0.4));
+    color: #00ffcc;
+}
+
+/* Footer compacto y alineado */
+.footer-container {
+    background: linear-gradient(to bottom,
+            hsl(217, 33%, 17%),
+            rgba(0, 0, 0, 0.4));
+    padding: 2rem 1rem;
+    color: #00ffcc;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20rem;
+}
+
+.footer-col h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-col p {
+    margin: 0.3rem 0;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    font-size: 1.4rem;
+    color: #00ffcc;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer-social a:hover {
+    color: #00ffcc;
+}
+
+.footer-copy {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+/* Iconos CSS desde ::before */
+.icon-facebook::before {
+    content: "\1F4F1";
+    margin-right: 0.4rem;
+}
+
+.icon-twitter::before {
+    content: "\1F426";
+    margin-right: 0.4rem;
+}
+
+.icon-linkedin::before {
+    content: "\1F465";
+    margin-right: 0.4rem;
+}
+
+.icon-earth::before {
+    content: "\1F30D";
+    margin-right: 0.4rem;
+}
+
+.icon-calendar::before {
+    content: "\1F4C5";
+    margin-right: 0.4rem;
+}
+
+.icon-location::before {
+    content: "\1F4CD";
+    margin-right: 0.4rem;
+}
+
+.icon-target::before {
+    content: "\1F3AF";
+    margin-right: 0.4rem;
+}
+
+.icon-check::before {
+    content: "\2705";
+    margin-right: 0.4rem;
+}
+
+.icon-pin::before {
+    content: "\1F4CC";
+    margin-right: 0.4rem;
+}
+
+.icon-rocket::before {
+    content: "\1F680";
+    margin-right: 0.4rem;
+}
+
+.icon-alert::before {
+    content: "\1F4E2";
+    margin-right: 0.4rem;
+}
+
+.icon-lightbulb::before {
+    content: "\1F4A1";
+    margin-right: 0.4rem;
+}
+
+.icon-mail::before {
+    content: "\2709";
+    margin-right: 0.4rem;
+}
+
+.icon-phone::before {
+    content: "\1F4DE";
+    margin-right: 0.4rem;
+}
+
+.icon-facebook::before {
+    content: "\1F4F1";
+    margin-right: 0.4rem;
+}
+
+.icon-twitter::before {
+    content: "\1F426";
+    margin-right: 0.4rem;
+}
+
+.icon-linkedin::before {
+    content: "\1F465";
+    margin-right: 0.4rem;
+}
+
+.icon-hashtag::before {
+    content: "\0023";
+    margin-right: 0.4rem;
+}
+
+.icon-copyright::before {
+    content: "\00A9";
+    margin-right: 0.4rem;
+}
+
+.icon-ticket::before {
+    content: "\1F39F";
+    margin-right: 0.4rem;
+}
+
+.icon-user::before {
+    content: "\1F464";
+    margin-right: 0.4rem;
+}
+
+.icon-globe::before {
+    content: "\1F30E";
+    margin-right: 0.4rem;
+}
+
+.icon-clip::before {
+    content: "\1F4CE";
+    margin-right: 0.4rem;
+}
+
+.icon-comment::before {
+    content: "\1F4AC";
+    margin-right: 0.4rem;
+}
+
+.icon-card::before {
+    content: "\1F4B3";
+    margin-right: 0.4rem;
+}
+
+.icon-check::before {
+    content: "\2705";
+    margin-right: 0.4rem;
+}
+
+.icon-clock::before {
+    content: "\1F559";
+    margin-right: 0.4rem;
+}
+
+.icon-microphone::before {
+    content: "\1F3A4";
+    margin-right: 0.4rem;
+}
+
+.icon-palette::before {
+    content: "\1F3A8";
+    margin-right: 0.4rem;
+}

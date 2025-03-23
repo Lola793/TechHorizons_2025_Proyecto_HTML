@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--  Requisito: "Define un título usando la etiqueta <title>" -->
+    <title>Inicio - Tech Horizons 2025</title>
+
+    <!--  Requisito: "Uso de meta viewport" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Requisito: "Tipografía con Google Fonts" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <!--  Requisito: "Enlace a CSS externo" -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!--  Requisito: "Navbar fija con efecto scroll (solo CSS)" -->
+    <div class="scroll-trigger"></div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="assets/images/conference-logo.png" alt="Logo Conferencia 2025" />
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="pages/registro.html">Registro</a></li>
+                <li><a href="pages/contenido.html">Agenda</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="navbar-button">Login</button>
+                <button class="navbar-button">FAQ</button>
+                <div class="dropdown">
+                    <button class="navbar-button lang-toggle-btn"><span class="icon-earth"></span></button>
+                    <ul class="lang-dropdown-content">
+                        <li><a href="#">ES</a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">FR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Requisito: "Header con nombre de la conferencia" -->
+    <header class="hero">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1>Tech Horizons 2025</h1>
+                <p>Innovación, IA y Automatización en Madrid - 15 y 16 Nov.</p>
+            </div>
+        </div>
+    </header>
+
+    <!--  Requisito: "Una o varias secciones <section> para describir la conferencia" -->
+    <section class="intro-section">
+        <article class="intro-card">
+            <h2><span class="icon-earth"></span> Conferencia Internacional de Tecnología 2025</h2>
+            <p>Innovación, Automatización e Inteligencia Artificial al Servicio del Futuro</p>
+            <ul>
+                <li><span class="icon-calendar"></span> Fecha: 15 y 16 de noviembre de 2025</li>
+                <li><span class="icon-location"></span> Ubicación: Madrid, España</li>
+                <li><span class="icon-target"></span> Dirigido a: Profesionales del sector tecnológico, desarrolladores,
+                    empresas y entusiastas de la innovación.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="vision-section">
+        <article class="intro-card">
+            <h3>Bienvenidos a la Cumbre Tecnológica del Año</h3>
+            <p>La Conferencia Internacional de Tecnología 2025 reúne a los principales expertos en automatización,
+                inteligencia artificial, desarrollo de software, IoT y ciberseguridad.</p>
+            <p>Durante dos días, exploraremos los avances tecnológicos que están transformando el mundo.</p>
+        </article>
+    </section>
+
+    <section class="benefits-section">
+        <article class="intro-card">
+            <h3>Este evento es una oportunidad única para:</h3>
+            <ul>
+                <li><span class="icon-check"></span> Conocer las últimas tendencias en tecnología y digitalización.</li>
+                <li><span class="icon-check"></span> Participar en talleres prácticos sobre Blue Prism, UiPath, IoT con
+                    ESP32, FastAPI y más.</li>
+                <li><span class="icon-check"></span> Escuchar a líderes del sector en conferencias inspiradoras.</li>
+                <li><span class="icon-check"></span> Ampliar tu red de contactos y conectar con empresas y profesionales
+                    del sector.</li>
+            </ul>
+            <p><span class="icon-pin"></span> Explora el programa y reserva tu plaza ahora.</p>
+        </article>
+    </section>
+
+    <section class="video-presentation-section">
+        <article class="intro-card">
+            <h3><span class="icon-lightbulb"></span> Descubre la Experiencia</h3>
+            <p>Sumérgete en la atmósfera de la Conferencia Internacional de Tecnología 2025 con este vídeo de
+                presentación. Conoce a los protagonistas, el entorno y los momentos clave que te esperan.</p>
+            <video class="event-video" controls="">
+                <source src="assets/video/1742708467342.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de vídeo.
+            </video>
+        </article>
+    </section>
+
+    <section class="cta-section">
+        <article class="intro-card">
+            <h3><span class="icon-rocket"></span> ¿Quieres formar parte de la revolución tecnológica?</h3>
+            <p>Regístrate en la Conferencia Internacional de Tecnología 2025 y asegura tu participación en uno de los
+                eventos más esperados del año.</p>
+            <p><span class="icon-alert"></span> Descuento especial: Inscripciones antes del 1 de octubre de 2025 con 10%
+                de descuento.</p>
+            <a href="pages/registro.html"
+                class="cta-button">Regístrate ahora - Plazas limitadas</a>
+        </article>
+    </section>
+
+    <section class="sponsors-section">
+        <article class="intro-card">
+            <h3><span class="icon-lightbulb"></span> Aliados Estratégicos y Empresas Participantes</h3>
+            <p>En la Conferencia Internacional de Tecnología 2025, reunimos a las empresas más innovadoras del sector.
+            </p>
+            <ul>
+                <li> SafeScreen - Ciberseguridad y protección de datos.</li>
+                <li> NeuralCode AI - Inteligencia artificial aplicada.</li>
+                <li> QuantumTech Labs - Computación cuántica.</li>
+                <li> FutureNet Solutions - Infraestructura tecnológica.</li>
+                <li> CyberTrust Global - Automatización segura con RPA.</li>
+            </ul>
+            <p><span class="icon-mail"></span> ¿Eres una empresa y quieres formar parte del evento? Escríbenos a
+                <a href="mailto:partners@tecnologia2025.com">partners@tecnologia2025.com</a>
+            </p>
+        </article>
+    </section>
+
+    <footer class="footer-container">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h2>Contacto</h2>
+                    <p>Email: <a href="mailto:info@tecnologia2025.com">info@tecnologia2025.com</a></p>
+                    <p>Teléfono: +34 666 666 666</p>
+                    <p>Ubicación: Madrid, España</p>
+                </div>
+                <div class="footer-col">
+                    <h2>FAQ</h2>
+                    <p>¿Dónde se realiza?</p>
+                    <p>¿Cómo me inscribo?</p>
+                    <p>¿Hay talleres online?</p>
+                </div>
+                <div class="footer-col">
+                    <h2>Partners</h2>
+                    <p>SafeScreen</p>
+                    <p>NeuralCode</p>
+                    <p>FutureNet</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><span class="icon-facebook"></span></a>
+            <a href="#"><span class="icon-twitter"></span></a>
+            <a href="#"><span class="icon-linkedin"></span></a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p class="footer-copy"><span class="icon-copyright"></span> 2012 - 2025 TechoHorizons. Todos los derechos
+            reservados.</p>
+    </footer>
+
+</body>
+
+</html>
